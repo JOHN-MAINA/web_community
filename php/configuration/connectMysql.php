@@ -17,11 +17,8 @@
         $conn = connect();
        $users = $conn->query("SELECT * FROM user");
 
-       foreach ($users as $user) {
-           echo "First Name: \t" . $user['fname'] . "\t Second Name: \t". $user['sname'] . " \t Email: \t" . $user['email'] . '<br>';
-       }
+       return $users;
 
    }
 
-   fetchUsers();
 ?>
